@@ -1,0 +1,9 @@
+.FlexCenterAll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TextCenter{
+    text-align: center;
+}
