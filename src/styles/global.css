@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    font-family: 'RobotTrafficDemo', sans-serif;
+}
+
+body{
+    background-color: var(--primaryBlack);
+    color: var(--primaryTextColor);
+    padding: 10px;
+    font-size: 1.5rem;
+}

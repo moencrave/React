@@ -1,0 +1,40 @@
+.bluryBubbleStyle {
+    filter: blur(40px);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: var(--primaryPurple);
+    animation: bluryBubblePulse 30s ease infinite
+}
+
+.rightBottomCorner {
+    right: 8%;
+    bottom: 1%;
+    top: 75%;
+    transform: scale(3);
+}
+
+
+@keyframes bluryBubblePulse {
+    0% {
+        right: 8%;
+        transform: scale(3);
+    }
+
+    30% {
+        right: 0%;
+    }
+
+    70% {
+        top: 50px;
+        right: 0%;
+    }
+
+    100% {
+        right: 8%;
+        bottom: 1%;
+        top: 75%;
+        transform: scale(3);
+    }
+}

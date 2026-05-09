@@ -1,0 +1,13 @@
+:root{
+    --primaryBlack: #0f0f0f;
+    --secondaryBlack: #1f1f1f;
+
+    --primaryPurple: #6100ed;
+    --secondaryPurple: #807eff;
+    
+    --primaryTextColor: #fafafa;
+    --secondaryTextColor: #acb3db;
+
+    --headingFontSize: clamp(0.95rem, 0.9vw, 1.8rem);;
+    --normalFontSize: clamp(0.9rem, 0.8vw, 1.6rem);;
+}

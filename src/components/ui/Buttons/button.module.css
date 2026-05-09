@@ -1,0 +1,38 @@
+.primaryLinkButtonStyle {
+  position: relative;
+  text-decoration: none;
+  color: var(--primaryTextColor);
+  font-family: 'MontserratSemiBold';
+  font-size: var(--headingFontSize);
+}
+
+.primaryLinkButtonStyle:hover {
+  color: var(--secondaryTextColor);
+}
+
+.primaryLinkButtonStyle::after {
+  content: '';
+  position: absolute;
+  left: -1.5px;
+  bottom: -8px;
+  width: 0;
+  height: 2px;
+  background-color: var(--primaryPurple);
+  transition: width 0.3s ease;
+}
+
+.primaryLinkButtonStyle:hover::after {
+  width: 100%;
+}
+
+.secondaryLinkButtonStyle {
+  position: relative;
+  text-decoration: none;
+  color: var(--secondaryPurple);
+  font-family: 'MontserratSemiBold';
+  font-size: var(--normalFontSize);
+}
+
+.secondaryLinkButtonStyle:hover {
+  color: var(--primaryPurple);
+}

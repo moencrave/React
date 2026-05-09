@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'QuickZap';
+  src: url('.,/../public/fonts/QuickZap.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MonserratBold';
+  src: url('.,/../public/fonts/MonserratBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontserratSemiBold';
+  src: url('../../public/fonts/MontserratSemiBold.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontserratRegular';
+  src: url('../../public/fonts/MontserratRegular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,51 +1,90 @@
-import ulStyles from './components/ui/css_modules/ul.module.css';
-import displayStyles from './components/ui/css_modules/display.module.css';
-import { LinkButton } from './components/ui/button.jsx';
-import { BluryBubble } from './components/ui/decorations.jsx';
+import { useEffect, useState } from 'react';
 
-function IntroText(props) {
+import { BluryBubble } from './components/ui/Decorations/decoration.jsx';
+import { PrimaryLinkButton, SecondaryLinkButton } from './components/ui/Buttons/button.jsx';
+
+import homeStyle from './home.module.css';
+
+function HeroAchievements({ heading, name, p }) {
     return (
-        <div className='IntroBox'>
-            <span className='TextCenter'>
-                {props.text}
-            </span>
-        </div>
-    )
-}
-
-function animatingDivs(){
-    let a = document.getElementsByClassName('IntroBox');
-    a[1].classList.add('.IntroBoxScaler');
+        <>
+            <div className={`${homeStyle.heroText}`}>
+                <h2 className={homeStyle.heroTextHeading}>{heading}</h2>
+                <p>{p}</p>
+                <h3 className={homeStyle.heroTextNames}>{name}</h3>
+            </div>
+        </>
+    );
 }
 
 export function HeroNav() {
     return (
-        <div className="HeroNavManager">
-            <div className={`NavBar ${displayStyles.FlexCenterAll}`}>
+
+        <div>
+
+            <section className={`${homeStyle.navBar} ${homeStyle.flexCenterAll}`}>
+
                 <nav>
-                    <ul className={`${ulStyles.UlStyle} ${displayStyles.FlexCenterAll}`}>
-                        <li><LinkButton src={'#'} LinkText={'Home'} /></li>
-                        <li><LinkButton src={'#'} LinkText={'Services'} /></li>
-                        <li><LinkButton src={'#'} LinkText={'Pricing'} /></li>
-                        <li><LinkButton src={'#'} LinkText={'About Us'} /></li>
-                        <li><LinkButton src={'#'} LinkText={'Contact Us'} /></li>
+
+                    <ul className={`${homeStyle.ulStyle} ${homeStyle.flexCenterAll}`}>
+
+                        <li>
+                            <PrimaryLinkButton href={'#'} text={'Home'} />
+                        </li>
+
+                        <li>
+                            <PrimaryLinkButton href={'#'} text={'Services'} />
+                        </li>
+
+                        <li>
+                            <PrimaryLinkButton href={'#'} text={'Pricing'} />
+                        </li>
+
+                        <li>
+                            <PrimaryLinkButton href={'#'} text={'About Us'} />
+                        </li>
+
+                        <li>
+                            <PrimaryLinkButton href={'#'} text={'Contact Us'} />
+                        </li>
+
                     </ul>
+
                 </nav>
-            </div>
-            <div className="HeroPage">
-                <BluryBubble rltb1={'left'} value1={'-3%'} rltb2={'top'} value2={'-5%'} />
-                <BluryBubble rltb1={'right'} value1={'-3%'} rltb2={'bottom'} value2={'-5%'} />
-                <div className="IntroTextHolder">
-                    <IntroText text='I am Moeed He is a very good boy' />
-                    <IntroText text='I am Moeed He is a very good boy' />
-                    <IntroText text='I am Moeed He is a very good boy' />
+
+            </section>
+
+            <div className={homeStyle.heroPage}>
+
+                <BluryBubble name='rightBottomCorner' />
+
+                <div className={homeStyle.heroTextHolder}>
+
+                    <HeroAchievements
+                        heading={'Overview'}
+                        name={<><PrimaryLinkButton href={'#'}text={'Moeed Ul Haq'}/> &nbsp; (BS. Cyber Security)"</>}
+                        p={<>'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam nam quis, quasi quidem recusandae quas. Magnam praesentium beatae, magni quibusdam soluta eum natus cupiditate. Consequuntur voluptates hic laboriosam aliquam obcaecati nam, in dolorum sint nihil officia {<SecondaryLinkButton href={'#'} text={'Moeed'} />} tenetur ad omnis beatae soluta velit quaerat aperiam temporibus voluptas placeat veritatis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam nam quis, quasi quidem recusandae quas. Magnam praesentium beatae, magni quibusdam soluta eum natus cupiditate. Consequuntur voluptates hic laboriosam aliquam obcaecati nam, in dolorum sint nihil officia tenetur ad omnis beatae soluta velit quaerat aperiam temporibus voluptas placeat veritatis, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint saepe molestiae nam, quod ipsum eos? Quam aperiam eligendi minus, numquam qui ad consectetur necessitatibus rem, fugiat veritatis maiores excepturi animi.'</>} />
+
                 </div>
 
-                <div className={`PhotoHolder ${displayStyles.FlexCenterAll}`}>
-                    <img className='ImageSet' src="../public/pictures/Moeed_Pic.jpeg" alt="" />
-                    <LinkButton src={'#'} LinkText={'Moeed'} />
+                <div className={`${homeStyle.heroPhotoHolder} ${homeStyle.flexCenterAll}`}>
+
+                    <img
+                        className={homeStyle.imgProfile}
+                        src="src/assets/pictures/Moeed_Pic.jpeg"
+                        alt="Moeed"
+                    />
+
+                    <PrimaryLinkButton
+                        href={'#'}
+                        text={'Moeed Ul Haq'}
+                    />
+
                 </div>
+
             </div>
+
         </div>
-    )
+
+    );
 }
