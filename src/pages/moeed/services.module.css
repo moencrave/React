@@ -1,0 +1,40 @@
+.servicesCardHolder{
+    width: 100%;
+    border-radius: 20px;
+    margin: 10px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 10px;
+}
+
+.servicesCard{
+    max-height: 370px;
+    background-color: var(--secondaryBlack);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    gap: 1rem;
+}
+
+.servicesCard:hover{
+    transform: scale(1.03);
+}
+
+.servicesCardImgHolder{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #414141;
+    border-radius: 20px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.servicesCardImgHolder img{
+    height: 100%;
+}

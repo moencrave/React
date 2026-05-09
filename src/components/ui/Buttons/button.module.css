@@ -1,9 +1,7 @@
 .primaryLinkButtonStyle {
   position: relative;
   text-decoration: none;
-  color: var(--primaryTextColor);
   font-family: 'MontserratSemiBold';
-  font-size: var(--headingFontSize);
 }
 
 .primaryLinkButtonStyle:hover {
@@ -29,7 +27,6 @@
   position: relative;
   text-decoration: none;
   color: var(--secondaryPurple);
-  font-family: 'MontserratSemiBold';
   font-size: var(--normalFontSize);
 }
 

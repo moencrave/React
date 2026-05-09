@@ -1,0 +1,28 @@
+.flexCenterAll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ulStyle {
+    list-style: none;
+    gap: 1.5rem
+}
+
+.headingText {
+    color: var(--primaryTextColor);
+    font-size: var(--headingFontSize);
+    font-family: 'MontserratSemiBold';
+}
+
+.semiHeadingText {
+    color: var(--secondaryPurple);
+    font-size: var(--headingFontSize);
+    font-family: 'MontserratSemiBold';
+}
+
+.normalText {
+    color: var(--secondaryTextColor);
+    font-size: var(--normalFontSize);
+    font-family: 'MontserratRegular';
+}

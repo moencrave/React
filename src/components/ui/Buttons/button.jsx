@@ -1,13 +1,14 @@
 import buttonStyle from './button.module.css';
+import masterStyle from './../../../pages/moeed/master.module.css';
 
 export function PrimaryLinkButton({href, text}) {
     return (
-        <a className={buttonStyle.primaryLinkButtonStyle} href={href}>{text}</a>
+        <a className={`${buttonStyle.primaryLinkButtonStyle} ${masterStyle.headingText}`} href={href}>{text}</a>
     )
 }
 
 export function SecondaryLinkButton({href, text}) {
     return (
-        <a className={buttonStyle.secondaryLinkButtonStyle} href={href}>{text}</a>
+        <a className={`${buttonStyle.secondaryLinkButtonStyle} ${masterStyle.semiHeadingText}`} href={href}>{text}</a>
     )
 }

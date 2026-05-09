@@ -1,0 +1,82 @@
+.navBar {
+    padding: 5px 15px 15px 15px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.heroPage {
+    background-color: var(--secondaryBlack);
+    width: 100%;
+    min-height: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.heroTextHolder {
+    height: 100%;
+    width: 80%;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    gap: 0.7rem;
+}
+
+.heroText {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 90%;
+    gap: 1rem;
+}
+
+.heroTextHeading {
+    color: var(--primaryTextColor);
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--primaryPurple);
+    width: fit-content;
+}
+
+.heroTextNames {
+    position: relative;
+    display: flex;
+    padding: 0 10px;
+    font-size: var(--normalFontSize);
+    color: var(--primaryTextColor);
+}
+
+.heroTextNames::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 0.9px;
+    background-color: var(--primaryPurple);
+}
+
+.heroPhotoHolder {
+    height: 90%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.heroPhotoHolder a {
+    font-size: 20px;
+}
+
+.imgProfile {
+    width: 50%;
+    border-radius: 20%;
+    z-index: 100;
+}
