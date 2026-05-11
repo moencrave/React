@@ -22,7 +22,6 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
-    border: 1px solid #acb3db68;
     overflow: hidden;
 
 }
@@ -62,7 +61,12 @@
 
 
 @media (max-width: 768px) {
+    .heroPage{
+        text-align: center;
+        flex-direction: column-reverse;
+        border: none;
+    }
     .navBar ul li a{
-        font-size: 9.2px;
+        font-size: 85%;
     }
 }

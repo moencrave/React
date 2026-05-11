@@ -3,7 +3,7 @@ import masterStyle from './master.module.css';
 
 function ServicesCard(props) {
     return (
-        <div className={`${servicesStyle.servicesCard} ${masterStyle.headingText}`}>
+        <div className={`${servicesStyle.servicesCard} ${masterStyle.normalText}`}>
             <div className={servicesStyle.servicesCardImgHolder}>
                 <img src={props.imgSrc} alt={props.imgAlt} />
             </div>
@@ -38,27 +38,6 @@ function Services() {
                         imgAlt={'Nothing'}
                         p={'Lorem ipsum commodi provident, officiis accusantium voluptas. Atque, cumque.'}
                         
-                        />
-                    <ServicesCard
-                        imgSrc={'src/assets/pictures/1.png'}
-                        imgAlt={'Nothing T'}
-                        p={'Lorem ipsum commodi provident, officiis accusantium voluptas. Atque, cumque.'}
-                        />
-                    <ServicesCard
-                        imgSrc={'src/assets/pictures/1.png'}
-                        imgAlt={'Nothing A'}
-                        p={'Lorem ipsum commodi provident, officiis accusantium voluptas. Atque, cumque.'}
-                    />
-                    <ServicesCard
-                        imgSrc={'src/assets/pictures/1.png'}
-                        imgAlt={'Nothing'}
-                        p={'Lorem ipsum commodi provident, officiis accusantium voluptas. Atque, cumque.'}
-                        
-                        />
-                    <ServicesCard
-                        imgSrc={'src/assets/pictures/1.png'}
-                        imgAlt={'Nothing T'}
-                        p={'Lorem ipsum commodi provident, officiis accusantium voluptas. Atque, cumque.'}
                         />
                 </div>
             </section>

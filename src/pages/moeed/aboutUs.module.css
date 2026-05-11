@@ -1,8 +1,7 @@
 .memberCardsHolder {
-    background-color: var(--secondaryBlack);
     display: flex;
-    border: 1px solid #acb3db68;
     border-radius: 20px;
+    background-color: var(--primaryBlack);
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
@@ -12,9 +11,12 @@
     align-items: center;
     overflow: hidden;
     row-gap: 1rem;
+    height: auto;
+    padding: 0 0 10px 0;
 }
 .memberCard {
     border: 1px solid #acb3db68;
+    background-color: var(--secondaryBlack);
     border-radius: 20px;
     width: calc(50% - 5px);
     box-shadow: 1px 5px 3px var(--primaryPurple);

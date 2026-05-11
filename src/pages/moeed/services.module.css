@@ -18,8 +18,8 @@
     align-items: center;
     text-align: center;
     transition: transform 0.1s ease-in-out;
+    border-top: 2px double var(--primaryPurple);
     gap: 1rem;
-    border: 1px solid #acb3db68;
 }
 
 .servicesCard:hover {
@@ -41,15 +41,14 @@
     height: 80%;
 }
 
-@media (max-width: 950px){
-    
-    .servicesCardHolder{
+@media (max-width: 950px) {
+    .servicesCardHolder {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 490px){
-    .servicesCardHolder{
+@media (max-width: 490px) {
+    .servicesCardHolder {
         grid-template-columns: repeat(1, 1fr);
     }
 }

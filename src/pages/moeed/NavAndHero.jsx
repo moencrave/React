@@ -20,7 +20,7 @@ function HeroNav() {
     return (
 
         <>
-            <nav className={`${navAndHeroStyle.navBar} ${masterStyle.normalText} ${masterStyle.flexRow}`}>
+            <nav className={`${navAndHeroStyle.navBar} ${masterStyle.headingText} ${masterStyle.flexRow}`}>
                 <ul className={`${masterStyle.ulStyle} ${masterStyle.flexRow}`}>
                     <li><PrimaryLinkButton href={'#'} text={'Home'} /></li>
                     <li><PrimaryLinkButton href={'#'} text={'Services'} /></li>
