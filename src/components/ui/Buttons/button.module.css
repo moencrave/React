@@ -12,7 +12,7 @@
   content: '';
   position: absolute;
   left: -1.5px;
-  bottom: -8px;
+  bottom: -6px;
   width: 0;
   height: 2px;
   background-color: var(--primaryPurple);
@@ -29,6 +29,7 @@
   color: var(--secondaryPurple);
   font-size: var(--normalFontSize);
 }
+
 
 .secondaryLinkButtonStyle:hover {
   color: var(--primaryPurple);

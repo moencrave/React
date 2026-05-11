@@ -1,11 +1,19 @@
 .navBar {
-    padding: 5px 15px 15px 15px;
-    overflow: hidden;
+    padding: 15px;
     width: 100%;
+    z-index: 2;
+    background-color: var(--primaryBlack);
+    overflow: hidden;
+    position: sticky;
+    top: 0px;
+    border-bottom: 2px solid var(--primaryPurple);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .heroPage {
     background-color: var(--secondaryBlack);
+    margin-top: 7px;
     width: 100%;
     min-height: 350px;
     padding: 20px;
@@ -14,7 +22,9 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
+    border: 1px solid #acb3db68;
     overflow: hidden;
+
 }
 
 .heroTextHolder {
@@ -27,38 +37,6 @@
     justify-content: space-between;
     border-radius: 20px;
     gap: 0.7rem;
-}
-
-.heroText {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 90%;
-    gap: 1rem;
-}
-
-.heroTextHeading {
-    color: var(--primaryTextColor);
-    padding-bottom: 5px;
-    border-bottom: 2px solid var(--primaryPurple);
-    width: fit-content;
-}
-
-.heroTextNames {
-    position: relative;
-    display: flex;
-    padding: 0 10px;
-    font-size: var(--normalFontSize);
-    color: var(--primaryTextColor);
-}
-
-.heroTextNames::before {
-    content: '';
-    position: absolute;
-    width: 2px;
-    height: 100%;
-    left: 0.9px;
-    background-color: var(--primaryPurple);
 }
 
 .heroPhotoHolder {
@@ -77,6 +55,14 @@
 
 .imgProfile {
     width: 50%;
-    border-radius: 20%;
-    z-index: 100;
+    min-width: 150px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+@media (max-width: 768px) {
+    .navBar ul li a{
+        font-size: 9.2px;
+    }
 }

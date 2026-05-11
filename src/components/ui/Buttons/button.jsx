@@ -1,9 +1,9 @@
 import buttonStyle from './button.module.css';
 import masterStyle from './../../../pages/moeed/master.module.css';
 
-export function PrimaryLinkButton({href, text}) {
+export function PrimaryLinkButton({href, text, headingName = 'headingText'}) {
     return (
-        <a className={`${buttonStyle.primaryLinkButtonStyle} ${masterStyle.headingText}`} href={href}>{text}</a>
+        <a className={`${buttonStyle.primaryLinkButtonStyle} ${masterStyle[headingName]}`} href={href}>{text}</a>
     )
 }
 

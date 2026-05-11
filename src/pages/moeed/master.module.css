@@ -1,12 +1,26 @@
-.flexCenterAll {
+.flexColumn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.flexRow {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
 }
 
 .ulStyle {
     list-style: none;
     gap: 1.5rem
+}
+
+.largerHeadingText {
+    color: var(--primaryTextColor);
+    font-size: var(--largerHeadingSize);
+    font-family: 'MontserratSemiBold';
 }
 
 .headingText {
@@ -26,3 +40,29 @@
     font-size: var(--normalFontSize);
     font-family: 'MontserratRegular';
 }
+
+.lineBeforeText {
+    position: relative;
+    display: flex;
+    padding: 0 10px;
+    font-size: var(--normalFontSize);
+    color: var(--primaryTextColor);
+}
+
+.lineBeforeText::before {
+    content: '';
+    position: absolute;
+    width: 1%;
+    height: 100%;
+    left: 1px;
+    background-color: var(--primaryPurple);
+}
+
+.underlineTextHeading {
+    color: var(--primaryTextColor);
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--primaryPurple);
+    width: fit-content;
+}
+
+

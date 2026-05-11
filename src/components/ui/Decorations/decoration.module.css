@@ -5,7 +5,7 @@
     height: 100px;
     position: absolute;
     background-color: var(--primaryPurple);
-    animation: bluryBubblePulse 10s ease infinite
+    animation: bluryBubblePulse 8s ease infinite
 }
 
 .rightBottomCorner {

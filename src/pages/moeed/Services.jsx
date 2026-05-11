@@ -20,19 +20,46 @@ function Services() {
                     <ServicesCard
                         imgSrc={'src/assets/pictures/1.png'}
                         imgAlt={'Nothing'}
-                        p={'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis veritatis, repellat iste unde ratione dolore, sint commodi provident, officiis accusantium voluptas. Atque, cumque.'}
-
-                    />
+                        p={'Lorem ipsum commodi provident, officiis accusantium voluptas. Atque, cumque.'}
+                        
+                        />
                     <ServicesCard
                         imgSrc={'src/assets/pictures/1.png'}
                         imgAlt={'Nothing T'}
-                        p={'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis veritatis, repellat iste unde ratione dolore, sint commodi provident, officiis accusantium voluptas. Atque, cumque.'}
-                    />
+                        p={'Lorem ipsum commodi provident, officiis accusantium voluptas. Atque, cumque.'}
+                        />
                     <ServicesCard
                         imgSrc={'src/assets/pictures/1.png'}
                         imgAlt={'Nothing A'}
-                        p={'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis veritatis, repellat iste unde ratione dolore, sint commodi provident, officiis accusantium voluptas. Atque, cumque.'}
+                        p={'Lorem ipsum commodi provident, officiis accusantium voluptas. Atque, cumque.'}
                     />
+                    <ServicesCard
+                        imgSrc={'src/assets/pictures/1.png'}
+                        imgAlt={'Nothing'}
+                        p={'Lorem ipsum commodi provident, officiis accusantium voluptas. Atque, cumque.'}
+                        
+                        />
+                    <ServicesCard
+                        imgSrc={'src/assets/pictures/1.png'}
+                        imgAlt={'Nothing T'}
+                        p={'Lorem ipsum commodi provident, officiis accusantium voluptas. Atque, cumque.'}
+                        />
+                    <ServicesCard
+                        imgSrc={'src/assets/pictures/1.png'}
+                        imgAlt={'Nothing A'}
+                        p={'Lorem ipsum commodi provident, officiis accusantium voluptas. Atque, cumque.'}
+                    />
+                    <ServicesCard
+                        imgSrc={'src/assets/pictures/1.png'}
+                        imgAlt={'Nothing'}
+                        p={'Lorem ipsum commodi provident, officiis accusantium voluptas. Atque, cumque.'}
+                        
+                        />
+                    <ServicesCard
+                        imgSrc={'src/assets/pictures/1.png'}
+                        imgAlt={'Nothing T'}
+                        p={'Lorem ipsum commodi provident, officiis accusantium voluptas. Atque, cumque.'}
+                        />
                 </div>
             </section>
         </main>

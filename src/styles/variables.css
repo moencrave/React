@@ -8,6 +8,7 @@
     --primaryTextColor: #fafafa;
     --secondaryTextColor: #acb3db;
 
-    --headingFontSize: clamp(0.88rem, 0.80vw, 1.4rem);;
-    --normalFontSize: clamp(0.9rem, 0.8vw, 1.6rem);;
+    --largerHeadingSize: clamp(1.2rem, 1.5vw, 2.2rem);
+    --headingFontSize: clamp(0.9rem, 0.80vw, 1.4rem);
+    --normalFontSize: clamp(0.9rem, 0.8vw, 1.6rem);
 }
