@@ -1,7 +1,7 @@
 .navBar {
     padding: 15px;
     width: 100%;
-    z-index: 2;
+    z-index: 20;
     background-color: var(--primaryBlack);
     overflow: hidden;
     position: sticky;
@@ -23,7 +23,6 @@
     justify-content: space-between;
     position: relative;
     overflow: hidden;
-
 }
 
 .heroTextHolder {
@@ -59,14 +58,99 @@
     z-index: 1;
 }
 
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
 
 @media (max-width: 768px) {
-    .heroPage{
+
+    .navBar {
+        justify-content: space-between;
+    }
+
+    .navBar ul li a {
+        font-size: var(--largerHeadingSize)
+    }
+
+    .heroPage {
         text-align: center;
         flex-direction: column-reverse;
         border: none;
     }
-    .navBar ul li a{
-        font-size: 85%;
+
+    .navLinksHolder {
+
+        border-right: 10px solid var(--primaryPurple);
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 80%;
+        height: 100%;
+
+        background-color: var(--secondaryBlack);
+
+        justify-content: left;
+        padding: 20px;
+        font-size: x-large;
+        gap: 30%;
+
+        transform: translateX(-100%);
+        transition: transform 0.4s ease;
+        z-index: 10;
+        visibility: hidden;
+    }
+    
+    .navLinksInOut {
+        visibility: visible;
+        transform: translateX(0);
+    }
+
+    .navLinksHolder ul {
+        align-items: normal;
+        flex-direction: column;
+    }
+
+    .menuMobileHolder {
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .menuMobileClose {
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        justify-content: end;
+        display: flex;
+    }
+
+    .menuMobileHolder button,
+    .menuMobileClose button {
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .menuMobileHolder button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menuMobileHolder img {
+        height: 30px;
+        background-color: var(--primaryPurple);
+        border-radius: 10px;
+    }
+
+    .menuMobileClose img {
+        height: 20px;
+        border-radius: 10px;
     }
 }
