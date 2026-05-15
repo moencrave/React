@@ -18,7 +18,7 @@
     align-items: center;
     text-align: center;
     transition: transform 0.1s ease-in-out;
-    border-top: 2px double var(--primaryPurple);
+    box-shadow: 0px 2px 3px var(--primaryPurple);
     gap: 1rem;
 }
 

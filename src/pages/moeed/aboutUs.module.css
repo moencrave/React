@@ -37,13 +37,22 @@
     width: 100%;
 }
 
+.memberCardRightTop{
+    justify-content: left;
+}
+
 .socialLinks {
     justify-content: left;
     gap: 1rem;
 }
 
 .socialLinks a img {
-    width: 30px;
+    width: 25px;
+    background-color: #c6c9d7;
+}
+
+.socialLinks a img:hover {
+    background-color: var(--secondaryPurple);
 }
 
 @media (max-width: 839px){
