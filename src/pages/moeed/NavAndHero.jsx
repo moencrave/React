@@ -40,11 +40,11 @@ function HeroNav() {
 
     }, []);
 
-    useEffect(() => { 
+    useEffect(() => {
 
         if (!isMobile) {
             setMenuOpen(false);
-        } 
+        }
 
     }, [isMobile]);
 
@@ -98,11 +98,17 @@ function HeroNav() {
 
                     <ul className={`${masterStyle.ulStyle} ${masterStyle.flexRow}`}>
 
+                        {isMobile && (
+                            <div className={``}>
+                                <h2 className={masterStyle.underlineTextHeading}>Links</h2>
+                            </div>
+                        )}
+
                         <li><PrimaryLinkButton href={'#'} text={'Home'} /></li>
                         <li><PrimaryLinkButton href={'#'} text={'Services'} /></li>
                         <li><PrimaryLinkButton href={'#'} text={'Pricing'} /></li>
-                        <li><PrimaryLinkButton href={'#'} text={'About'} /></li>
-                        <li><PrimaryLinkButton href={'#'} text={'Contact'} /></li>
+                        <li><PrimaryLinkButton href={'#'} text={'About Us'} /></li>
+                        <li><PrimaryLinkButton href={'#'} text={'Contact Us'} /></li>
 
                     </ul>
 

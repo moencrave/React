@@ -91,7 +91,7 @@
         top: 0;
         left: 0;
 
-        width: 80%;
+        width: 60%;
         height: 100%;
 
         background-color: var(--secondaryBlack);
@@ -137,6 +137,12 @@
         cursor: pointer;
     }
 
+    .menuMobileHolder button:hover,
+    .menuMobileClose button:hover {
+        background-color: var(--primaryPurple);
+        border-radius: 20px;
+    }
+
     .menuMobileHolder button {
         display: flex;
         justify-content: center;
@@ -145,12 +151,11 @@
 
     .menuMobileHolder img {
         height: 30px;
-        background-color: var(--primaryPurple);
         border-radius: 10px;
     }
 
     .menuMobileClose img {
-        height: 20px;
+        height: 15px;
         border-radius: 10px;
     }
 }
